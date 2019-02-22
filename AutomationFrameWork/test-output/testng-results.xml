@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Automation Framework" duration-ms="117147" started-at="2019-02-22T12:21:21Z" finished-at="2019-02-22T12:23:18Z">
+    <groups>
+    </groups>
+    <test name="Automation Framework Test Cases" duration-ms="117147" started-at="2019-02-22T12:21:21Z" finished-at="2019-02-22T12:23:18Z">
+      <class name="com.automation.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.automation.qa.testcases.HomePageTest@14ba872]" name="setup" is-config="true" duration-ms="29863" started-at="2019-02-22T12:21:22Z" finished-at="2019-02-22T12:21:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="createNewRegustrationTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.qa.testcases.HomePageTest@14ba872]" name="createNewRegustrationTest" duration-ms="33279" started-at="2019-02-22T12:21:52Z" data-provider="getRegistrationData" finished-at="2019-02-22T12:22:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ghhsd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ghgjvvds]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vsndh@bhjd.cvc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4.533365645E9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2015.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[January]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[AS2]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[AS2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: 2015.0
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SCOMP16', ip: '192.168.2.16', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 2015.0
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SCOMP16', ip: '192.168.2.16', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+at com.automation.qa.pages.HomePage.createNewRegustration(HomePage.java:74)
+at com.automation.qa.testcases.HomePageTest.createNewRegustrationTest(HomePageTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewRegustrationTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.HomePageTest@14ba872]" name="tearDown" is-config="true" duration-ms="2418" started-at="2019-02-22T12:22:26Z" finished-at="2019-02-22T12:22:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.automation.qa.testcases.HomePageTest@14ba872]" name="setup" is-config="true" duration-ms="13835" started-at="2019-02-22T12:22:28Z" finished-at="2019-02-22T12:22:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="createNewRegustrationTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.qa.testcases.HomePageTest@14ba872]" name="createNewRegustrationTest" duration-ms="34162" started-at="2019-02-22T12:22:42Z" data-provider="getRegistrationData" finished-at="2019-02-22T12:23:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vikrant]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bulbule]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vvbulbule@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9.59547822E9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2015.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[May]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[AS6]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[AS6]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: 2015.0
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SCOMP16', ip: '192.168.2.16', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 2015.0
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SCOMP16', ip: '192.168.2.16', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+at com.automation.qa.pages.HomePage.createNewRegustration(HomePage.java:74)
+at com.automation.qa.testcases.HomePageTest.createNewRegustrationTest(HomePageTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewRegustrationTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.HomePageTest@14ba872]" name="tearDown" is-config="true" duration-ms="2450" started-at="2019-02-22T12:23:16Z" finished-at="2019-02-22T12:23:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.qa.testcases.HomePageTest -->
+    </test> <!-- Automation Framework Test Cases -->
+  </suite> <!-- Automation Framework -->
+</testng-results>

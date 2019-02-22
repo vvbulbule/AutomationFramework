@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation Framework]">
+  <listeners>
+    <listener class-name="com.automation.qa.ExtentReportLitener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Automation Framework Test Cases(failed)">
+    <classes>
+      <class name="com.automation.qa.testcases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="createNewRegustrationTest" invocation-numbers="0 1"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.automation.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Automation Framework Test Cases(failed) -->
+</suite> <!-- Failed suite [Automation Framework] -->
