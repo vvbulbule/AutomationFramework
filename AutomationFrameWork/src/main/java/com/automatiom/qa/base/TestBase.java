@@ -18,6 +18,8 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import com.automation.qa.util.TestUtil;
 import com.automation.qa.util.WebEventListener;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 
 public class TestBase {
@@ -27,11 +29,12 @@ public class TestBase {
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventLitener;
 	
-
+	// Constructor to Read the Configuration File
 	public TestBase(){
 		try{
 			prop= new Properties();
-			FileInputStream ip =new FileInputStream("D:/Selenium/Selenium/AutomationFrameWork/src/main/java/com/automation/qa/config/config.properties");
+			//FileInputStream ip =new FileInputStream("/home/vbulbule/git/AutomationFramework/AutomationFrameWork/src/main/java/com/automation/qa/config/config.properties");
+			FileInputStream ip =new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/automation/qa/config/config.properties");
 			prop.load(ip);
 		}catch(FileNotFoundException e){
 			e.printStackTrace();
@@ -44,12 +47,12 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "D:/Selenium/MY Selenium Setup/chromedriver.exe");
-			driver = new ChromeDriver();
+			WebDriverManager.chromedriver().setup();
+			 driver= new ChromeDriver();
 			
 		} else if (browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", "/Users/naveenkhunteta/Documents/SeleniumServer/geckodriver");	
-			driver = new FirefoxDriver(); 
+			WebDriverManager.firefoxdriver().setup();
+			 driver= new FirefoxDriver();
 		}
 		
 		e_driver = new EventFiringWebDriver(driver);

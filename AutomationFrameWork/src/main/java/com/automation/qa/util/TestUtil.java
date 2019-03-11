@@ -19,16 +19,16 @@ public class TestUtil extends TestBase{
 	
 	public static long PAGE_LOAD_TIMEOUT=20;
 	public static long IMPLICIT_WAIT=30;
-	
-	public static String TESTDATA_SHEET_PATH= "D:/Selenium/Selenium/AutomationFrameWork/src/main/java/com/automation/testdata/TestData.xls";
-	
+	//System.getProperty("user.dir")+"/src/main/java/com/automation/qa/config/config.properties"
+	//public static String TESTDATA_SHEET_PATH= "/home/vbulbule/git/AutomationFramework/AutomationFrameWork/src/main/java/com/automation/testdata/TestData.xls";
+	//public static String TESTDATA_SHEET_PATH= new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/automation/qa/config/config.properties");
 	static Workbook book;
 	static Sheet sheet;
 	
 	public static Object[][] getTestData(String sheetName) {
 		FileInputStream file = null;
 		try {
-			file = new FileInputStream(TESTDATA_SHEET_PATH);
+			file = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/automation/testdata/TestData.xls");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
