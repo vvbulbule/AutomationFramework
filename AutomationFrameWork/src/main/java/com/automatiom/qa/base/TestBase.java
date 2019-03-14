@@ -1,4 +1,4 @@
-/* Author:  Vikrant Bulbule */
+/* Author:  Vikrant Bulbule 14 March 2019*/
 
 
 package com.automatiom.qa.base;
@@ -18,7 +18,6 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import com.automation.qa.util.TestUtil;
 import com.automation.qa.util.WebEventListener;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 
@@ -47,11 +46,12 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver", "/home/vbulbule/Selenium 3.14/chromedriver");
+			//WebDriverManager.chromedriver().setup();
 			 driver= new ChromeDriver();
 			
 		} else if (browserName.equals("FF")){
-			WebDriverManager.firefoxdriver().setup();
+			//WebDriverManager.firefoxdriver().setup();
 			 driver= new FirefoxDriver();
 		}
 		
