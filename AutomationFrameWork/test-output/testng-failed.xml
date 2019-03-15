@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automation.qa.testcases.HomePageTest">
+      <class name="com.automation.qa.testcases.LoginPageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="createNewRegustrationTest" invocation-numbers="0 1"/>
           <include name="setup"/>
+          <include name="loginTest"/>
+          <include name="validateLaginPageLogoTest"/>
+          <include name="tearDown"/>
+          <include name="validateLoginPageTitleTest"/>
         </methods>
-      </class> <!-- com.automation.qa.testcases.HomePageTest -->
+      </class> <!-- com.automation.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

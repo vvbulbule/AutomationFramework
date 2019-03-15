@@ -18,6 +18,8 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import com.automation.qa.util.TestUtil;
 import com.automation.qa.util.WebEventListener;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 
 
@@ -46,12 +48,13 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "/home/vbulbule/Selenium 3.14/chromedriver");
-			//WebDriverManager.chromedriver().setup();
+			//System.setProperty("webdriver.chrome.driver", "/home/vbulbule/Selenium 3.14/chromedriver");
+			//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/chromedriver");
+			WebDriverManager.chromedriver().setup();
 			 driver= new ChromeDriver();
 			
 		} else if (browserName.equals("FF")){
-			//WebDriverManager.firefoxdriver().setup();
+			WebDriverManager.firefoxdriver().setup();
 			 driver= new FirefoxDriver();
 		}
 		
